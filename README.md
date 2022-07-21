@@ -1,5 +1,7 @@
 # epilot360-unicorn-game
 
+<img width="1780" alt="image" src="https://user-images.githubusercontent.com/8988635/180184083-1aa19e27-c199-4a1d-b100-092d40b31d7a.png">
+
 Epilot 360 microfrontend built with [single-spa](https://single-spa.js.org/).
 
 Bootstrapped with `@epilot360/create-mfe-app`
