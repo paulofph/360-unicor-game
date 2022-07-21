@@ -1,0 +1,25 @@
+{
+  "extends": "ts-config-single-spa",
+  "compilerOptions": {
+    "jsx": "react",
+    "outDir": "build",
+    "sourceMap": true,
+    "declaration": true,
+    "noEmit": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": ["dom", "es2020"]
+  },
+  "include": ["src/**/*", "node_modules/@types"],
+  "exclude": [
+    "node_modules",
+    "src/**/*.test.*",
+    "src/**/*.spec.*",
+    "src/__tests__",
+    "src/__mocks__",
+    "src/**/*.stories.tsx",
+    "src/stories",
+  ]
+}

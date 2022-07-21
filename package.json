@@ -1,0 +1,58 @@
+{
+  "name": "@epilot360/unicorn-game",
+  "version": "0.0.1",
+  "files": [
+    "build"
+  ],
+  "main": "build/index.js",
+  "scripts": {
+    "start": "webpack serve --port 8888",
+    "start:standalone": "webpack serve --env standalone",
+    "build": "webpack --mode=production",
+    "analyze": "webpack --mode=production --env analyze",
+    "lint": "eslint src --ext js,ts,tsx",
+    "test": "jest",
+    "watch-tests": "jest --watch",
+    "coverage": "jest --coverage",
+    "deploy": "cd iac && npm run deploy --",
+    "pre-deploy": "cd iac && npm install",
+    "typescript": "tsc",
+    "prepublishOnly": "npm run typescript"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "concurrently yarn:test yarn:lint"
+    }
+  },
+  "devDependencies": {
+    "@epilot/eslint-config-react": "1.2.7",
+    "@epilot360/webpack-config-epilot360": "^2.4.3",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@types/testing-library__jest-dom": "^5.9.5",
+    "concurrently": "^5.3.0",
+    "eslint": "^7.15.0",
+    "husky": "^4.3.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.0.6",
+    "jest-cli": "^27.2.4",
+    "single-spa-react": "^4.0.0",
+    "ts-config-single-spa": "^3.0.0",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "@types/jest": "^26.0.24",
+    "@types/systemjs": "^6.1.0",
+    "@types/webpack-env": "^1.16.0",
+    "@types/react": "^16.9.32",
+    "@types/react-dom": "^16.9.6",
+    "url-loader": "^0.5.7"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}

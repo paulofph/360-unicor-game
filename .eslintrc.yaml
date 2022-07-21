@@ -1,0 +1,19 @@
+---
+extends: "@epilot/eslint-config-react"
+env:
+  jest: true
+settings:
+  import/resolver:
+    node:
+      extensions:
+        - ".js"
+        - ".jsx"
+        - ".ts"
+        - ".tsx"
+      paths:
+        - src
+parserOptions:
+  sourceType: module
+ignorePatterns:
+  - "/node_modules/*"
+  - "/build/*"

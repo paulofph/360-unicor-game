@@ -1,0 +1,36 @@
+{
+  "name": "epilot360-unicorn-game-iac",
+  "description": "cdk",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "echo 'No tests defined!'",
+    "cdk": "cdk",
+    "synth": "cdk synth",
+    "diff": "cdk diff",
+    "deploy": "cdk deploy"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.90.1",
+    "@aws-cdk/aws-certificatemanager": "^1.0.0",
+    "@aws-cdk/aws-cloudfront": "^1.0.0",
+    "@aws-cdk/aws-ec2": "^1.0.0",
+    "@aws-cdk/aws-route53": "^1.0.0",
+    "@aws-cdk/aws-route53-targets": "^1.0.0",
+    "@aws-cdk/aws-s3": "^1.0.0",
+    "@aws-cdk/aws-s3-deployment": "^1.0.0",
+    "@aws-cdk/core": "^1.0.0",
+    "@epilot/eslint-config": "^1.2.6",
+    "@types/jest": "^26.0.10",
+    "@types/node": "10.17.27",
+    "aws-cdk": "^1.0.0",
+    "aws-sdk": "^2.853.0",
+    "eslint": "^7.20.0",
+    "jest": "^26.4.2",
+    "source-map-support": "^0.5.16",
+    "ts-jest": "^26.2.0",
+    "ts-node": "^9.0.0",
+    "typescript": "~3.9.7"
+  }
+}

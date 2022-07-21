@@ -1,0 +1,16 @@
+include:
+  - project: "e-pilot/platform/epilot-ci"
+    ref: "3.2.0"
+    file: "gitlab/node/ci.cdk-spa.yml"
+
+variables:
+  SERVICE_NAME: epilot360-unicorn-game
+
+  # dev
+  DEV_REACT_APP_STAGE: dev
+
+  # staging
+  STAGING_REACT_APP_STAGE: stage
+
+  # prod
+  PROD_REACT_APP_STAGE: prod
