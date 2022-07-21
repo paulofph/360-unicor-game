@@ -57,8 +57,8 @@ export default class Game extends React.Component {
 
     this.options = {
       fps: 60,
-      skySpeed: 40,
-      groundSpeed: 100,
+      skySpeed: 70,
+      groundSpeed: 150,
       skyImage: skyImage,
       groundImage: groundImage,
       playerImage: [unicorn1, unicorn2, unicorn3, unicorn4],
